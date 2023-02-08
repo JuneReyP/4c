@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- external CSS -->
+    <link rel="stylesheet" href="akonDesign.css">
+
+    <!-- internal CSS -->
+    <style>
+        h1, h2{
+            background-color: blueviolet;
+        }
+    </style>
+
+<script src="https://kit.fontawesome.com/b09ca8b066.js" crossorigin="anonymous"></script>
+</head>
+<body class="container">
+    <a href="home.html" class="text-decor"><i class="fa-solid fa-house"></i></a>
+    <!-- inline CSS -->
+    <h1 style="color:aquamarine;">Hello World</h1>
+    <h2>H2 element</h2>
+    <h2 class="external center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur soluta adipisci reprehenderit et cumque consequuntur id, modi commodi iusto eos officiis. Fuga doloremque omnis beatae labore dolorum necessitatibus earum facilis.</h2>
+
+    <button onclick="document.getElementById('demo').innerHTML = Date()">Display Date</button>
+
+    <p id="demo"></p>
+
+    <button onclick="document.getElementById('change').style.backgroundColor = 'aquamarine'">Change BG-color</button>
+
+    <p id="change">sample</p>
+
+    <script>
+        document.getElementById('demo').style.backgroundColor = 'aquamarine'
+    </script>
+    <script src="sample.js"></script>
+</body>
+</html>

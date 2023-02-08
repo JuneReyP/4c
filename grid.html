@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 2px;
+            text-decoration: none;
+        }
+        nav{
+            background-color: grey;
+            padding: 3px;
+        }
+        .container{
+            background-color: yellow;
+            display: grid;
+            grid-template-columns: 25% 50% 25%;
+        }
+        .left{
+            background-color: aquamarine;
+            height: 450px;
+        }
+        .main-content{
+            background-color: azure;
+            height: 450px;
+        }
+        .right{
+            background-color: rgb(2, 33, 33);
+            color: white;
+            height: 450px;
+        }
+        footer{
+            background-color: bisque;
+        }
+        img{
+            width: 125px;
+            height: 125px;
+        }
+        .posting{
+            margin: 3px;
+            padding: 2px;
+        }
+        /* 
+        @media not|only mediatype and (expressions) {
+                CSS-Code;
+                }
+         */           
+
+            @media screen and (max-width: 900px){
+                .container{
+            background-color: yellow;
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+    }
+        @media screen and (max-width: 600px){
+                .container{
+            background-color: yellow;
+            display: grid;
+            grid-template-columns: 75%;
+        }
+            }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- this is for navigation section start -->
+        <nav class="nav-bar">
+            <a href="#">Home</a>
+            <a href="#">Blogs</a>
+            <a href="#">About</a>
+        </nav>
+        <!-- this is for navigation section end -->
+    </div>
+    <!-- this is for the content, left, main, rigth side start-->
+    <div class="container">
+        <!-- Left side -->
+        <div class="left">
+            <img src="index.jpg" alt="">
+        </div>
+        <!-- main content -->
+        <main class="main-content">
+            <div class="posting">
+                <h1>Title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, adipisci omnis fugit temporibus perferendis nostrum vel inventore obcaecati, fugiat repellat repudiandae! A nulla sit iusto quaerat inventore quae accusamus consequuntur.</p>
+            </div>
+        </main>
+        <!-- right content -->
+        <div class="right">
+            Right side content
+        </div>
+    </div>
+    <!-- this is for the content, left, main, rigth side end-->
+    <footer>
+        footer content here
+    </footer>
+</body>
+</html>
