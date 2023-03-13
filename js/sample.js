@@ -176,39 +176,92 @@ switch(expression) {
 // }
 
 
-function calcuLater(equation){
+// function calcuLater(equation) {
+
+//   let num1 = document.getElementById('num1').value;
+//   let num2 = document.getElementById('num2').value;
+
+//   let answer;
+//   switch (equation) {
+//     case '+':
+//       answer = parseInt(num1) + parseInt(num2);
+//       break;
+//     case '-':
+//       answer = parseInt(num1) - parseInt(num2)
+//       break;
+//     case '/':
+//       answer = parseInt(num1) / parseInt(num2)
+//       break;
+//     case '*':
+//       answer = parseInt(num1) * parseInt(num2)
+//       break;
+//   }
+//   document.getElementById('outPut').innerHTML = answer;
+// }
+
+
+/* Activity
+1. Write a code that will determine the days of a month. (Using switch case statement)
+2. Write a code that will classify the grades by:
+  A = 91 - 100
+  B = 86 - 90
+  C = 81 - 85
+  D = 75 - 80
+  E = 74 below
   
-    let num1 = document.getElementById('num1').value;
-    let num2 = document.getElementById('num2').value;
-    
-    let answer;
-    switch(equation){
-      case '+':
-        answer = parseInt(num1) + parseInt(num2);
-        break;
-      case '-':
-        answer = parseInt(num1) - parseInt(num2)
-        break;
-      case '/':
-        answer = parseInt(num1) / parseInt(num2)
-        break;
-      case '*':
-        answer = parseInt(num1) * parseInt(num2)
-        break;
-    }
-    document.getElementById('outPut').innerHTML = answer;
-  }
-  
-  
-  /* Activity
-  1. Write a code that will determine the days of a month. (Using switch case statement)
-  2. Write a code that will classify the grades by:
-    A = 91 - 100
-    B = 86 - 90
-    C = 81 - 85
-    D = 75 - 80
-    E = 74 below
-    
-    Using if-elseif-else
-  */
-  
+  Using if-elseif-else
+*/
+
+// function getDaysMonth() {
+//   let insertMonth = document.getElementById('monthData').value;
+//   let outputAnswer;
+//   switch (insertMonth.toLowerCase()){
+//     case 'january':
+//     case 'march':
+//     case 'may':
+//     case 'july':
+//     case 'september':
+//     case 'november':
+//     case 'december':
+//       outputAnswer = insertMonth + " has 31 days";
+//       break;
+//     case 'april':
+//     case 'june':
+//     case 'august':
+//     case 'october':
+//       outputAnswer = insertMonth + " has 30 days";
+//       break;
+//     case 'february':
+//       outputAnswer = insertMonth + " has 28 days";
+//       break;
+//     default:
+//       outputAnswer = insertMonth + " is not a month!"
+//   }
+//   document.getElementById('outputMonth').innerHTML = outputAnswer;
+// }
+
+//fruits[2]
+// let person = {'firstname': 'Cathy', 'age': 28} //object
+// console.log(person.firstname);
+
+/*for-loop
+for(init; condition; increment/decrement;){
+  //execution
+}
+*/
+let fruits = ['banana', 'apple', 'tomato', 'pineapple']; //indexed array
+//frtuits[2]
+//multi-dimentional array
+let sample = [
+  ['banana', 'apple', 'tomato', 'pineapple'], //0
+  ['orange', 'green', 'violet', 'yellow'], //1
+  [1, 2, 3, 4], //2
+  ['a', 'b', 'c', 'd'] //3
+]; 
+//sample[1][2]
+
+//single array
+for(let i = 0; i < 4; i++){
+  console.log(fruits[i]);
+  document.getElementById('outputMonth').innerHTML = fruits[i];
+}
